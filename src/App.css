@@ -9,6 +9,7 @@ body {
 .container {
 	width: 1200px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .content {
@@ -34,6 +35,7 @@ body {
 
 .special {
 	margin-top: 19px;
+	margin-bottom: 100px;
 	font-weight: 700;
 	font-size: 30px;
 	text-align: center;
@@ -45,21 +47,19 @@ body {
 	display: flex;
 	justify-content: end;
 	.btn-a {
-		border-radius: 10px;
-		margin-top: 50px;
+		margin-top: 100px;
 		margin-right: 160px;
 		padding: 12px 20px;
 		text-decoration: none;
 
 		font-weight: 400;
 		font-size: 20px;
-		color: #00cd39;
+		color: #92abfc;
 
-		box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
-		background: rgba(4, 114, 15, 0.32);
+		border: 1px solid blue;
 	}
 	.btn-a:hover {
-		color: #01a02e;
-		background: rgba(3, 96, 13, 0.32);
+		color: #ffffff;
+		background: rgba(30, 14, 131, 0.32);
 	}
 }
