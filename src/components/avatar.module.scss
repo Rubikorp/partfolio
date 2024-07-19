@@ -1,83 +1,102 @@
+:root {
+	--containerSize: 363px;
+	--borderContainer: 367px;
+	--avatarBg: 360px;
+	--top: -25px;
+	--avatarSizeWeight: 363px;
+	--avatarSizeHeight: 488px;
+}
+
 .container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  margin-top: calc(50vh - (363px / 2));
-  margin-left: calc(50vw - (363px / 2));
-  border-radius: 50%;
+	border-radius: 50%;
 
-  height: 367px;
-  width: 367px;
-  border: 1.2px white solid;
-  animation: border 3s infinite;
+	height: var(--borderContainer);
+	width: var(--borderContainer);
+	border: 1.2px white solid;
+	animation: border 3s infinite;
 
-  &:after {
-    content: "";
-    position: absolute;
-    width: 363px;
-    height: 363px;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: white;
-    opacity: 0.1;
-    filter: blur(60px);
-  }
+	&:after {
+		content: '';
+		position: absolute;
+		width: var(--containerSize);
+		height: var(--containerSize);
+		border-radius: 50%;
+		z-index: -1;
+		background-color: white;
+		opacity: 0.1;
+		filter: blur(60px);
+	}
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: -3.5px;
-    left: -3px;
-    width: 367px;
-    height: 367px;
-    
-    border-radius: 50%;
-    border: 3px #0500FF solid;
-    z-index: -1;
-    animation: repeat-blur 3s infinite;
-    filter: blur(5px);
-  }
+	&:before {
+		content: '';
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		width: var(--borderContainer);
+		height: var(--borderContainer);
+
+		border-radius: 50%;
+		border: 10px #0500ff solid;
+		z-index: -1;
+		animation: repeat-blur 3s infinite;
+		filter: blur(20px);
+	}
 }
 
 @keyframes repeat-blur {
-  0% {
-    filter: blur(5px);
-  }
-  50% {
-    filter: blur(15px);
-  }
+	0% {
+		filter: blur(20px);
+	}
+	50% {
+		filter: blur(30px);
+	}
 
-  100% {
-    filter: blur(5px);
-  }
+	100% {
+		filter: blur(20px);
+	}
 }
 
 @keyframes border {
-  0% {
-    box-shadow: 0px 0px 0px 0px white;
-  }
-  50% {
-    box-shadow: 0px 0px 0px 1px white;
-  }
+	0% {
+		box-shadow: 0px 0px 0px 0px white;
+	}
+	50% {
+		box-shadow: 0px 0px 0px 1px white;
+	}
 
-  100% {
-    box-shadow: 0px 0px 0px 0px white;
-  }
+	100% {
+		box-shadow: 0px 0px 0px 0px white;
+	}
 }
 
-
-
-
 .avatarbg {
-  width: 360px;
-  height: 360px;
+	width: var(--avatarBg);
+	height: var(--avatarBg);
 }
 
 .avatar {
-  position: absolute;
-  top: -26px;
-  width: 363px;
-  
+	position: absolute;
+	top: var(--top);
+	height: var(--avatarSizeHeight);
+	width: var(--avatarSizeWeight);
+}
+
+@media (max-width: 500px) {
+	:root {
+		--containerSize: 200px;
+		--borderContainer: 205px;
+		--avatarBg: 197px;
+		--avatarSizeWeight: 200px;
+		--avatarSizeHeight: 265px;
+		--top: -10px;
+	}
+	.container {
+		margin-top: 20px;
+	}
 }

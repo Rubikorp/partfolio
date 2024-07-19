@@ -1,0 +1,41 @@
+.container {
+	position: relative;
+	width: 100px;
+	height: 550px;
+}
+.containerSvg {
+	position: absolute;
+	top: 65px;
+	right: -270px;
+}
+
+.svgRecOne:hover,
+.svgRecTwo:hover {
+	path {
+		fill-opacity: 0.2;
+		cursor: pointer;
+	}
+}
+
+.containerSvgRec {
+	position: relative;
+
+	.textRecOne,
+	.textRecTwo {
+		position: absolute;
+		margin: 0;
+		font-weight: 400;
+		font-size: 30px;
+		color: #95a6c7;
+	}
+}
+
+.textRecOne {
+	top: 129px;
+	left: 92px;
+}
+
+.textRecTwo {
+	top: 112px;
+	left: 92px;
+}
