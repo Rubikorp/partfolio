@@ -1,8 +1,8 @@
 import { ReactSVG } from 'react-svg'
-import leftDownSvg from '../../img/recdownleftMobile.svg'
-import rightDownSvg from '../../img/recdownrightMobile.svg'
-import leftUpSvg from '../../img/recupleftMobile.svg'
-import rightUpSvg from '../../img/recuprightMobile.svg'
+import leftDownSvg from '../../assets/img/recdownleftMobile.svg'
+import rightDownSvg from '../../assets/img/recdownrightMobile.svg'
+import leftUpSvg from '../../assets/img/recupleftMobile.svg'
+import rightUpSvg from '../../assets/img/recuprightMobile.svg'
 import { IPropsModal, TModal } from '../../types/typesModal'
 
 import styled from './MenuMobile.module.scss'

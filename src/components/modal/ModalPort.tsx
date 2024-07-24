@@ -12,7 +12,7 @@ export const ModalPort: React.FC<IPropsModal> = ({
 	return (
 		<div className={styled.container}>
 			<div className={styled.content}>
-				<div className={styled.port}>
+				<div className={`${styled.port} ${styled.contentBox}`}>
 					<h3 className={styled.title}>Портфолио</h3>
 					<p className={styled.portTitle}>ПЕТ-Проекты:</p>
 					<ul className={styled.portList}>

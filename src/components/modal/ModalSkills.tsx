@@ -12,7 +12,7 @@ export const ModalSkills: React.FC<IPropsModal> = ({
 	return (
 		<div className={styled.container}>
 			<div className={styled.content}>
-				<div>
+				<div className={styled.contentBox}>
 					<h3 className={styled.title}>Скилы</h3>
 
 					<p>

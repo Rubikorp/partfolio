@@ -12,7 +12,7 @@ export const ModalAboutMe: React.FC<IPropsModal> = ({
 	return (
 		<div className={styled.container}>
 			<div className={styled.content}>
-				<div>
+				<div className={styled.contentBox}>
 					<h3 className={styled.title}>Общая информация</h3>
 					<p>
 						Мотивированный и целеустремленный Junior Frontend Developer с годом

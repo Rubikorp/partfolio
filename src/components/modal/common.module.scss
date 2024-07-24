@@ -121,6 +121,10 @@
 		font-size: 25px;
 	}
 	.content {
-		width: 400px;
+		width: 325px;
+	}
+	.contentBox {
+		height: 300px;
+		overflow-y: auto;
 	}
 }

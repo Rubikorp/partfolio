@@ -1,6 +1,6 @@
 import { ReactSVG } from 'react-svg'
-import recLeftUrlOne from '../img/Rec 1 left.svg'
-import recLeftUrlTwo from '../img/Rec 2 left.svg'
+import recLeftUrlOne from '../assets/img/Rec 1 left.svg'
+import recLeftUrlTwo from '../assets/img/Rec 2 left.svg'
 import styled from './leftMenu.module.scss'
 import { IPropsModal, TModal } from '../types/typesModal'
 

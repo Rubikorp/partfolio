@@ -82,6 +82,7 @@
 
 .avatar {
 	position: absolute;
+	z-index: 1;
 	top: var(--top);
 	height: var(--avatarSizeHeight);
 	width: var(--avatarSizeWeight);

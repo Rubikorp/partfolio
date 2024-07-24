@@ -9,7 +9,7 @@ export const ModalExp: React.FC<IPropsModal> = ({ setModal, setOpenModal }) => {
 	return (
 		<div className={styled.container}>
 			<div className={styled.content}>
-				<div className={styled.exp}>
+				<div className={`${styled.exp} ${styled.contentBox}`}>
 					<h3 className={styled.title}>Опыт</h3>
 					<p className={styled.expDate}>Июнь 2021 — февраль 2022</p>
 					<p className={styled.expTitle}>стартап "NextGen Innovations"</p>

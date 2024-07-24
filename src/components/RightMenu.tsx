@@ -1,8 +1,8 @@
 import { ReactSVG } from 'react-svg'
-import recRightUrlOne from '../img/Rec 1 right.svg'
-import recRightUrlTwo from '../img/Rec 2 right.svg'
-import styled from './rightMenu.module.scss'
+import recRightUrlOne from '../assets/img/Rec 1 right.svg'
+import recRightUrlTwo from '../assets/img/Rec 2 right.svg'
 import { IPropsModal, TModal } from '../types/typesModal'
+import styled from './rightMenu.module.scss'
 
 export const RightMenu: React.FC<IPropsModal> = ({
 	setModal,

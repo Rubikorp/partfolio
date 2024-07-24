@@ -1,8 +1,8 @@
-import { ReactSVG } from 'react-svg'
 import { useState } from 'react'
-import emailSrc from '../img/email.svg'
-import telegramSrc from '../img/telegram.svg'
-import whatsappSrc from '../img/whatsapp.svg'
+import { ReactSVG } from 'react-svg'
+import emailSrc from '../assets/img/email.svg'
+import telegramSrc from '../assets/img/telegram.svg'
+import whatsappSrc from '../assets/img/whatsapp.svg'
 import styled from './contacts.module.scss'
 
 export const Contacts: React.FC = () => {
@@ -20,7 +20,7 @@ export const Contacts: React.FC = () => {
 						onMouseMove={() => setHoverEl('telegram')}
 						onMouseOut={() => setHoverEl('')}
 					>
-						<ReactSVG src={telegramSrc} className={styled.svg}/>
+						<ReactSVG src={telegramSrc} className={styled.svg} />
 					</a>
 					{hoverEl === 'telegram' ? (
 						<p className={styled.element}>{hoverEl}</p>
@@ -36,7 +36,7 @@ export const Contacts: React.FC = () => {
 						onMouseMove={() => setHoverEl('email')}
 						onMouseOut={() => setHoverEl('')}
 					>
-						<ReactSVG src={emailSrc} className={styled.svg}/>
+						<ReactSVG src={emailSrc} className={styled.svg} />
 					</a>
 					{hoverEl === 'email' ? (
 						<p className={styled.elementMail}>{hoverEl}</p>
@@ -53,7 +53,7 @@ export const Contacts: React.FC = () => {
 						onMouseMove={() => setHoverEl('whatsapp')}
 						onMouseOut={() => setHoverEl('')}
 					>
-						<ReactSVG src={whatsappSrc} className={styled.svg}/>
+						<ReactSVG src={whatsappSrc} className={styled.svg} />
 					</a>
 					{hoverEl === 'whatsapp' ? (
 						<p className={styled.element}>{hoverEl}</p>

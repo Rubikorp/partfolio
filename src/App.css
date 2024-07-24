@@ -90,6 +90,9 @@ body {
 }
 
 @media (max-width: 900px) {
+	body {
+		overflow-x: hidden;
+	}
 	.btn-container {
 		display: none;
 	}
