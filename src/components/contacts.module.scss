@@ -65,3 +65,22 @@
 	text-align: center;
 	color: #5a88e39e;
 }
+
+@media (max-width: 900px) {
+	.title {
+		margin: 0;
+		margin-top: 190px;
+		font-size: 20px;
+
+		text-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.25);
+	}
+
+	.container {
+		margin-top: 18px;
+		gap: 55px;
+	}
+
+	.svg div svg {
+		width: 37px;
+	}
+}

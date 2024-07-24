@@ -87,13 +87,13 @@
 	width: var(--avatarSizeWeight);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	:root {
-		--containerSize: 200px;
-		--borderContainer: 205px;
-		--avatarBg: 197px;
-		--avatarSizeWeight: 200px;
-		--avatarSizeHeight: 265px;
+		--containerSize: 190px;
+		--borderContainer: 195px;
+		--avatarBg: 185px;
+		--avatarSizeWeight: 190px;
+		--avatarSizeHeight: 249px;
 		--top: -10px;
 	}
 	.container {

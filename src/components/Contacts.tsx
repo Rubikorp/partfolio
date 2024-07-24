@@ -20,7 +20,7 @@ export const Contacts: React.FC = () => {
 						onMouseMove={() => setHoverEl('telegram')}
 						onMouseOut={() => setHoverEl('')}
 					>
-						<ReactSVG src={telegramSrc} />
+						<ReactSVG src={telegramSrc} className={styled.svg}/>
 					</a>
 					{hoverEl === 'telegram' ? (
 						<p className={styled.element}>{hoverEl}</p>
@@ -36,7 +36,7 @@ export const Contacts: React.FC = () => {
 						onMouseMove={() => setHoverEl('email')}
 						onMouseOut={() => setHoverEl('')}
 					>
-						<ReactSVG src={emailSrc} />
+						<ReactSVG src={emailSrc} className={styled.svg}/>
 					</a>
 					{hoverEl === 'email' ? (
 						<p className={styled.elementMail}>{hoverEl}</p>
@@ -53,7 +53,7 @@ export const Contacts: React.FC = () => {
 						onMouseMove={() => setHoverEl('whatsapp')}
 						onMouseOut={() => setHoverEl('')}
 					>
-						<ReactSVG src={whatsappSrc} />
+						<ReactSVG src={whatsappSrc} className={styled.svg}/>
 					</a>
 					{hoverEl === 'whatsapp' ? (
 						<p className={styled.element}>{hoverEl}</p>

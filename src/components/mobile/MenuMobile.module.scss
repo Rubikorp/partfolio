@@ -1,0 +1,79 @@
+.container {
+	position: absolute;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.svgUpLeft,
+.svgUpRight,
+.svgDownLeft,
+.svgDownRight {
+	position: relative;
+	cursor: pointer;
+}
+
+.svgUpLeft div svg,
+.svgUpRight div svg,
+.svgDownLeft div svg,
+.svgDownRight div svg {
+	z-index: -1;
+}
+
+.svgUpLeft::before {
+	content: 'Общая информация';
+	position: absolute;
+
+	top: 60px;
+	left: 29px;
+
+	font-weight: 400;
+	font-size: 20px;
+	color: #95a6c7;
+	z-index: -2;
+}
+
+.svgUpRight::before {
+	content: 'Cкилы';
+	position: absolute;
+
+	top: 60px;
+	left: 59px;
+
+	font-weight: 400;
+	font-size: 20px;
+	color: #95a6c7;
+	z-index: -2;
+}
+
+.svgDownLeft::before {
+	content: 'Опыт работы';
+	position: absolute;
+
+	top: 165px;
+	left: 26px;
+
+	font-weight: 400;
+	font-size: 20px;
+	color: #95a6c7;
+	z-index: -2;
+}
+
+.svgDownRight::before {
+	content: 'Портфолио';
+	position: absolute;
+
+	top: 165px;
+	left: 36px;
+
+	font-weight: 400;
+	font-size: 20px;
+	color: #95a6c7;
+	z-index: -2;
+}
+
+@media (min-width: 900px) {
+	.container {
+		display: none;
+	}
+}

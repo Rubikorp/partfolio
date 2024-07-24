@@ -4,15 +4,18 @@ body {
 	font-family: 'Inter', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
+	overflow: hidden;
 }
 
 .container {
-	width: 1200px;
-	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	position: relative;
 }
 
 .content {
+	margin-top: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -45,10 +48,10 @@ body {
 
 .btn-container {
 	display: flex;
-	justify-content: end;
+	justify-content: center;
 	.btn-a {
 		margin-top: 100px;
-		margin-right: 160px;
+		margin-left: 600px;
 		padding: 12px 20px;
 		text-decoration: none;
 
@@ -61,5 +64,52 @@ body {
 	.btn-a:hover {
 		color: #ffffff;
 		background: rgba(30, 14, 131, 0.32);
+	}
+}
+
+.btn-container-mobile {
+	display: none;
+	width: 384px;
+	margin-bottom: 170px;
+	.btn-a-mobile {
+		width: 100%;
+		padding: 12px;
+		text-decoration: none;
+		text-align: center;
+
+		font-weight: 400;
+		font-size: 20px;
+		color: #4b5aff;
+
+		border: 1px solid blue;
+	}
+	.btn-a-mobile:hover {
+		color: #ffffff;
+		background: rgba(30, 14, 131, 0.32);
+	}
+}
+
+@media (max-width: 900px) {
+	.btn-container {
+		display: none;
+	}
+
+	.name {
+		font-size: 25px;
+	}
+
+	.special {
+		margin-top: 15px;
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+
+	.content {
+		margin-top: 5px;
+	}
+
+	.btn-container-mobile {
+		display: flex;
+		justify-content: center;
 	}
 }

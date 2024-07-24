@@ -1,10 +1,126 @@
 .container {
 	position: absolute;
-	top: 0;
-	left: 0;
+	background-color: rgba(11, 11, 86, 0.258);
+	top: -50%;
+	left: -50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 100%;
+	width: 200%;
+	height: 200%;
+	z-index: 2;
+	.content {
+		max-width: 500px;
+		padding: 20px;
+		font-size: 20px;
+		color: #95a6c7;
+		border: 1px solid rgb(117, 117, 253);
+		background-color: rgb(2, 2, 57);
+		animation: openModal 0.2s ease-in-out;
+
+		p span {
+			font-weight: bold;
+			color: rgb(186, 186, 255);
+		}
+	}
+}
+
+.title {
+	margin: 0;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+	color: #5790ff;
+}
+
+.btnContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	.btn {
+		text-decoration: none;
+
+		font-weight: 400;
+		font-size: 20px;
+		color: #92abfc;
+		background: none;
+		padding: 10px 20px;
+
+		border: 1px solid rgb(69, 69, 246);
+	}
+	.btn:hover {
+		color: #ffffff;
+		background: rgba(30, 14, 131, 0.32);
+	}
+}
+
+@keyframes openModal {
+	from {
+		transform: scaleY(0);
+	}
+	to {
+		transform: scaleY(1);
+	}
+}
+
+.exp {
+	.expDate {
+		text-align: center;
+		margin: 0;
+		padding: 10px;
+		border: 1px solid blue;
+	}
+
+	.expTitle {
+		color: white;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.expListTitle {
+		color: #5790ff;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+
+	.expList {
+		margin-top: 10px;
+		list-style: none;
+		padding: 0;
+	}
+
+	.expListItem {
+		margin-bottom: 5px;
+	}
+}
+
+.port {
+	.portTitle {
+		font-weight: bold;
+	}
+	.portList {
+		list-style: none;
+		padding: 0;
+		.portItem {
+			padding: 5px;
+			.portItemLink {
+				color: #92abfc;
+				text-decoration: none;
+			}
+			.portItemLink:hover {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.title {
+		font-size: 25px;
+	}
+	.content {
+		width: 400px;
+	}
 }

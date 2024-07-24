@@ -23,6 +23,7 @@
 	.textRecOne,
 	.textRecTwo {
 		position: absolute;
+		z-index: -1;
 		margin: 0;
 		font-weight: 400;
 		font-size: 30px;
@@ -38,4 +39,82 @@
 .textRecTwo {
 	top: 112px;
 	left: 92px;
+}
+
+@media (max-width: 1200px) {
+	.svgRecOne div svg {
+		width: 455px;
+		height: 217px;
+	}
+	.svgRecTwo div svg {
+		width: 505px;
+		height: 217px;
+	}
+	.container {
+		position: relative;
+		width: 300px;
+	}
+	.containerSvg {
+		position: absolute;
+		top: 159px;
+		right: -280px;
+	}
+	.containerSvgRec {
+		.textRecOne,
+		.textRecTwo {
+			font-size: 25px;
+		}
+
+		.textRecOne {
+			top: 109px;
+			left: 82px;
+		}
+
+		.textRecTwo {
+			top: 92px;
+			left: 82px;
+		}
+	}
+}
+
+@media (max-width: 1150px) {
+	.svgRecOne div svg {
+		width: 335px;
+		height: 217px;
+	}
+	.svgRecTwo div svg {
+		width: 375px;
+		height: 177px;
+	}
+	.container {
+		position: relative;
+		width: 10px;
+	}
+	.containerSvg {
+		position: absolute;
+		top: 172px;
+		right: -230px;
+	}
+	.containerSvgRec {
+		.textRecOne,
+		.textRecTwo {
+			font-size: 25px;
+		}
+
+		.textRecOne {
+			top: 99px;
+			left: 42px;
+		}
+
+		.textRecTwo {
+			top: 62px;
+			left: 42px;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.container {
+		display: none;
+	}
 }
