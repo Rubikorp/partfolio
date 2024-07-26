@@ -5,8 +5,8 @@
 }
 .containerSvg {
 	position: absolute;
-	top: 100px;
-	left: -270px;
+	top: 0;
+	left: -100px;
 	display: flex;
 	flex-direction: column;
 	align-items: end;
@@ -59,8 +59,8 @@
 	}
 	.containerSvg {
 		position: absolute;
-		top: 159px;
-		left: -280px;
+		top: 60px;
+		left: -100px;
 	}
 	.containerSvgRec {
 		.textRecOne,
@@ -95,8 +95,8 @@
 	}
 	.containerSvg {
 		position: absolute;
-		top: 172px;
-		left: -230px;
+		top: 70px;
+		left: -60px;
 	}
 	.containerSvgRec {
 		.textRecOne,
